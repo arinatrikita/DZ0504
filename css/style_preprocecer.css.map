@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,MAAM;EACJ,OAAO,EAAE,KAAK;EACd,KAAK,EAAE,IAAU",
+"sources": ["style_preprocecer.scss"],
+"names": [],
+"file": "style_preprocecer.css"
+}
