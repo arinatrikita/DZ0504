@@ -1,4 +1,123 @@
-.block{
-  display: block;
-  width: 100px-10px;
+@import "style.css";
+@import "https://fonts.googleapis.com/css?family=Lobster|Open+Sans&display=swap";
+@import "media-queries.css";
+$hover_color:#49cbcd;
+$pacet_color:#485460;
+$price_color:#f8f9fb;
+$button_color:#788492;
+$main_font_regular:'Open Sans';
+$main_font_size:14px;
+$color:#ffffff;
+//
+//.block{
+//  width: 100px;
+//  height: 100px;
+//  background-color: $danger_color;
+//}
+//p{
+//  font-size: 16px;
+//  color: $main_color;
+//}
+//header{
+//  background-color: aqua;
+//  width: 100%;
+//  nav{
+//    background-color: bisque;
+//    ul{
+//      list-style: none;
+//      font-size: $main_font_regular;
+//      li{
+//        padding: 10px 0;
+//      }
+//    }
+//
+//  }
+//}
+.main{
+  background-color: #cccccc;
+  max-width: 100%;
+  padding: 120px 0 100px;
+  line-height: 1;
 }
+.contanier_price{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.block{
+  width: 370px;
+  height: 520px;
+  background-color:$color;
+  color: $button_color;
+
+  }
+.block.pro{
+margin-left: 30px;
+margin-right: 30px;}
+
+ul.text{
+  display: inline-block;
+  transform: none;
+  text-align: center;
+  line-height: 45px;
+  width: 370px;
+  :first-of-type {
+    line-height: 75px;
+    background-color: $pacet_color;
+    color: $color;
+    font-size: 26px;
+
+    :hover {
+      background-color: $hover_color;
+    }
+  }
+  :last-of-type{
+      height: 100px;
+      background-color: $price_color;
+      color: $color;
+    border-bottom: none;
+
+    }
+  :nth-of-type(2){
+    height: 70px;
+    background-color: $price_color;
+    font-size: 20px;
+    padding-top: 12px;
+    color: $pacet_color;
+  }
+
+  }
+
+  .text li {
+    font-size: $main_font_size;
+    font-family: $main_font_regular;
+    border-bottom: 1px solid #cccccc;
+    text-transform: capitalize;
+
+
+    a.buy {
+      display: inline-block;
+      text-decoration: none;
+      text-align: center;
+      //width: 170px;
+      //height: 38px;
+      border: solid 1px transparent;
+      border-radius: 3%;
+      font-size: 17px;
+      background-color: $button_color;
+      color: $color;
+      text-transform: capitalize;
+      //margin: 27px 100px;
+      margin: 30px 0;
+      padding: 5px 45px;
+
+
+      }
+    }
+
+
+a.buy:hover {
+  background-color: $hover_color;}
+
+
+

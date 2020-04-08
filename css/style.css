@@ -89,7 +89,9 @@ ul {
 ul li {
     position: relative;
     list-style: none;
-}
+
+    }
+
 ul li a {
     position: relative;
     width: 75px;
