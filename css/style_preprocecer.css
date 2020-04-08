@@ -11,6 +11,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center; }
+  @media screen and (max-width: 375px) {
+    .contanier_price {
+      flex-direction: column; } }
 
 .block {
   width: 370px;
@@ -21,6 +24,9 @@
 .block.pro {
   margin-left: 30px;
   margin-right: 30px; }
+  @media screen and (max-width: 375px) {
+    .block.pro {
+      margin: 20px 0; } }
 
 ul.text {
   display: inline-block;

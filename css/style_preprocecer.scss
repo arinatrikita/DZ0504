@@ -8,6 +8,11 @@ $button_color:#788492;
 $main_font_regular:'Open Sans';
 $main_font_size:14px;
 $color:#ffffff;
+@mixin max-screen($res) {
+  @media screen and (max-width: $res) {
+    @content;
+  }
+}
 //
 //.block{
 //  width: 100px;
@@ -43,6 +48,10 @@ $color:#ffffff;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  @include max-screen(375px){
+  flex-direction: column;
+
+    }
 }
 .block{
   width: 370px;
@@ -53,7 +62,11 @@ $color:#ffffff;
   }
 .block.pro{
 margin-left: 30px;
-margin-right: 30px;}
+margin-right: 30px;
+@include max-screen(375px){
+  margin: 20px 0 ;
+}
+}
 
 ul.text{
   display: inline-block;
